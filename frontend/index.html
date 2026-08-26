@@ -13,8 +13,8 @@
 
     <script>
     async function buscarFilmes() {
-        // acessar a rota GET do backend, trazer os filmes e mostrar os filmes na tela
-        const resposta = await fetch("http://localhost:3306/all-tasks") // resposta do backend
+        // acessar a rota GET do backend, trazer os sfilmes e mostrar os filmes na tela
+        const resposta = await fetch("https://atv1-lemon.vercel.app/all-tasks") // resposta do backend
         const filmes = await resposta.json() // converte a resposta num objeto JS
         const sectionFilmes = document.querySelector(".filmes")
       
