@@ -2,6 +2,10 @@ GET http://localhost:3306/
 
 ###
 
+GET http://localhost:3306/all-tasks
+
+###
+
 POST http://localhost:3306/create-task
 Content-Type: application/json
 
