@@ -10,10 +10,10 @@ POST http://localhost:3306/create-task
 Content-Type: application/json
 
 {
-  "titulo": "Michael",
-  "genero": "documentario?",
-  "classificacao": 16,
-  "duracao": 120
+  "titulo": "Piratas do Caribe: a vingaça de salazar",
+  "genero": "ação, aventura",
+  "classificacao": 12,
+  "duracao": 130
 }
 
 
@@ -22,12 +22,12 @@ DELETE http://Localhost:3306/delete-task/1
 
 ###
 
-PUT http://localhost:3306/update-task/4
+PUT http://localhost:3306/update-task/15
 Content-Type: application/json
 
 {
-    "titulo": "Como eu era antes de você",
-    "genero": "romance",
-    "duracao": 120,
-    "classificacao": 16
+    "titulo": "Piratas do Caribe: a vingança de salazar",
+    "genero": "ação, aventura",
+    "classificacao": 12,
+    "duracao": 130
 }
