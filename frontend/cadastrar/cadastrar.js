@@ -1,19 +1,19 @@
 async function cadastrarFilme() {
-    const title = document.getElementById("title")
-    const gender = document.getElementById("gender")
-    const ageLimit = document.getElementById("ageLimit")
-    const duration = document.getElementById("duration")
+    const titulo = document.getElementById("titulo")
+    const genero = document.getElementById("genero")
+    const classificacao = document.getElementById("classificacao")
+    const duracao = document.getElementById("duracao")
 
-    if (title.value === "" || gender.value === "" || ageLimit.value === "" || duration.value === "") {
+    if (titulo.value === "" || genero.value === "" || classificacao.value === "" || duracao.value === "") {
         alert("Preencha todos os campos!")
         return  
     }
 
     const filme = {
-        title: title.value,
-        gender: gender.value,
-        ageLimit: ageLimit.valueAsNumber,
-        duration: duration.valueAsNumber
+        titulo: titulo.value,
+        genero: genero.value,
+        classificacao: classificacao.valueAsNumber,
+        duracao: duracao.valueAsNumber
     }
 
     const resposta = await fetch("https://atv1-lemon.vercel.app/create-task", {
